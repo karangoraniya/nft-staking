@@ -1,16 +1,17 @@
-# Vesting-Smart-Contract
+# NFT-Staking-Smart-Contract
 
-Vesting Smart Contract for 2 months cliff and 22 months linear vesting for all roles.
+NFT-Staking Smart Contract for 1 month, 6months, and 12 months.
 
 ## Vesting
 
 #### Get all Tokens Details
 
-| Roles       | Token % | Total Tokens |
-| :---------- | :------ | :----------- |
-| Advisor     | `05`    | 500000       |
-| Partnership | `10`    | 1000000      |
-| Mentor      | `09`    | 900000       |
+| Duration     | APR Reward % | Reward Tokens |
+| :----------- | :----------- | :------------ |
+| 01 Month     | `05`         | NPY           |
+| 06 Months    | `10`         | NPY           |
+| 12 Months    | `15`         | NPY           |
+| After 1 Year | `15`         | NPY           |
 
 ## Important Step
 
