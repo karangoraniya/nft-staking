@@ -16,7 +16,7 @@ async function main() {
   console.log('NFTMint deployed to:', nftMint.address);
 
   const Staking = await hre.ethers.getContractFactory('Staking');
-  const staking = await Staking.deploy();
+  const staking = await Staking.deploy(nappyToken.address, nftMint.address);
 
   await staking.deployed();
 

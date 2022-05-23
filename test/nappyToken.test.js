@@ -13,7 +13,6 @@ describe('NappyToken', function () {
 
   it('Should return the correct name', async function () {
     const NappyToken = await ethers.getContractFactory('NappyToken');
-    // const initialSupply = BigNumber.from(1000000);
     const nappyToken = await NappyToken.deploy();
     await nappyToken.deployed();
 

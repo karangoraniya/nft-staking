@@ -109,5 +109,6 @@ Help
 
 ## Check on Rinkeby Explorer
 
-- [NappyToken](https://rinkeby.etherscan.io/address/0x47F88eeA94bA9D50D2f6A7e4fC734C2792dbD01D)
-- [Vesting](https://rinkeby.etherscan.io/address/0xFD28e6B4b91B3D1E2664577226105720567b8448)
+- [NappyToken](https://rinkeby.etherscan.io/address/0x89939c7Caf1F850a467bd145772aF5B733C34C2e)
+- [NFTMint](https://rinkeby.etherscan.io/address/0x3C87Df4552730a0Cd2E38A703106e3A83f9Fe37f)
+- [Staking](https://rinkeby.etherscan.io/address/0x22f9b3f98E3210a723e944015Ed6D779f0a1AA6c)
