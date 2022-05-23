@@ -61,8 +61,8 @@ contract Staking is ERC1155Holder {
     // @dev It will confirm the you have enough NFT to stake.
     // @param It will take Token Id of NFT & Amount.
 
-    function stakeNFt(uint256 _tokenId, uint256 _amount) public {
-        require(NFTItem.balanceOf(msg.sender, _tokenId) > _amount,'you dont have enough balance');
+    function stakeNFT(uint256 _tokenId, uint256 _amount) public {
+        require(NFTItem.balanceOf(msg.sender, _tokenId) >= _amount,'you dont have enough balance');
         stakes[msg.sender] = Staker(_tokenId, _amount, block.timestamp);
         NFTItem.safeTransferFrom(msg.sender, address(this), _tokenId, _amount, "0x00");
         emit Stake (msg.sender, _tokenId, _amount, block.timestamp);
@@ -73,7 +73,7 @@ contract Staking is ERC1155Holder {
     // @param It will take Token Id of NFT & Amount.
     // Reward amount = Staked Amount * Reward Rate * TimeDiff / RewardInterval
 
-    function unStakeNFt(uint256 _tokenId, uint256 _amount) public {
+    function unStakeNFT(uint256 _tokenId, uint256 _amount) public {
         stakes[msg.sender].amount -= _amount;
         NFTItem.safeTransferFrom( address(this), msg.sender, _tokenId, _amount, "0x00");
 
