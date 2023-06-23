@@ -1,6 +1,6 @@
-const { expect } = require('chai');
-const { BigNumber } = require('ethers');
-const { ethers } = require('hardhat');
+import { expect } from 'chai';
+import { BigNumber } from 'ethers';
+import { ethers } from 'hardhat';
 
 describe('NappyToken', function () {
   it('Should return the correct symbol', async function () {

@@ -3,6 +3,10 @@ node_modules
 coverage
 coverage.json
 typechain
+package-lock.json
+.temp
+.DS_Store
+typechain-types/
 
 #Hardhat files
 cache

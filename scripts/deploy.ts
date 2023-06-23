@@ -1,21 +1,20 @@
-const hre = require('hardhat');
-
+import { ethers } from 'hardhat';
 async function main() {
-  const NappyToken = await hre.ethers.getContractFactory('NappyToken');
+  const NappyToken = await ethers.getContractFactory('NappyToken');
   const nappyToken = await NappyToken.deploy();
 
   await nappyToken.deployed();
 
   console.log('NappyToken deployed to:', nappyToken.address);
 
-  const NFTMint = await hre.ethers.getContractFactory('NFTMint');
+  const NFTMint = await ethers.getContractFactory('NFTMint');
   const nftMint = await NFTMint.deploy();
 
   await nftMint.deployed();
 
   console.log('NFTMint deployed to:', nftMint.address);
 
-  const Staking = await hre.ethers.getContractFactory('Staking');
+  const Staking = await ethers.getContractFactory('Staking');
   const staking = await Staking.deploy(nappyToken.address, nftMint.address);
 
   await staking.deployed();
