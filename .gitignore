@@ -1,0 +1,32 @@
+# Compiler files
+cache/
+out/
+
+# Ignore gas snapshot
+gas-snapshots/
+*.gas-snapshot
+
+# Ignores development broadcast logs
+!/broadcast
+broadcast
+/broadcast/*/31337/
+/broadcast/**/dry-run/
+
+# Docs
+docs/
+
+# Dot env files
+.env
+.env.local
+.env.*.local
+
+# Editor/OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Git submodules (optional — use only if submodules are properly configured)
+# Ignore all lib/ but explicitly allow needed submodules
+lib/*
+!lib/forge-std
+!lib/openzeppelin-contracts
